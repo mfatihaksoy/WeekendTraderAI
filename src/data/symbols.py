@@ -1,12 +1,3 @@
-SYMBOLS = [
-    "AAPL",
-    "MSFT",
-    "NVDA",
-    "META",
-    "AMZN",
-    "GOOGL",
-    "TSLA",
-    "PLTR",
-    "AMD",
-    "NFLX"
-]
+from data.get_symbols import get_symbols
+
+SYMBOLS = get_symbols()
