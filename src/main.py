@@ -1,8 +1,5 @@
-import yfinance as yf
+from data.downloader import download_stock
 
-apple = yf.Ticker("AAPL")
+apple = download_stock("AAPL")
 
-bilgi = apple.fast_info
-
-print("Apple")
-print(f"Güncel fiyat: {bilgi['lastPrice']} USD")
+print(apple.head())
